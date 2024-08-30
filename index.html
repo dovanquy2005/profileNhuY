@@ -3,29 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Profile </title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"> -->
+    <title>Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e6a20b8e66.js" crossorigin="anonymous"></script>
-</body>
 </head>
 <body>
-    <!-- avatar -->
-    <center>
-        <img class="avatar" src="./image/avatar-nhuy.jpg" alt="avatar">
-        <h3>Phạm Thị Như Ý</h3>
-        <p>Hello everyone, my name is Nhu Y and I am currently a sophomore at University. My major is banking.</p>
-        <button class="bt" onclick="location='https://www.facebook.com/nhuy.pt.3998?locale=vi_VN'"><i class="fa-brands fa-facebook"></i> Facebook</button><br>
-        <button class="bt" onclick="location='https://www.instagram.com/iam_nhuys'"><i class="fa-brands fa-instagram"></i> Instagram</button><br>
-        <button class="bt" onclick="location='https://www.tiktok.com/@nhuydayrui?_t=8pHV8CdTPo9&_r=1'"><i class="fa-brands fa-tiktok"></i> TikTok</button><br>
-        <button class="bt" onclick="location='https://www.threads.net/@iam_nhuys'"><i class="fa-brands fa-threads"></i> Threads</button>
-    
-    </center>
+    <div class="container">
+    <!------ First card container------>
+        <div class="card-container">
+            <div class="top-box">
+                <div class="top-menu">
+                    <!-- ------ First dropdown ------ -->
+                     <div class="dropdown">
+                        <button class="dropbtn">
+                             <i class="fa-solid fa-bars"></i> 
+                        </button>
+                        <div class="dropdown-content menu">
+                            <div class="menu-list">
+                                <a href="#">About</a>
+                                <a href="#">Portfolio</a>
+                                <a href="#">Activities</a>
+                            </div>
+                        </div>
+                     </div>
 
-    
+                     <!-- ------ Second dropdown ------ -->
+                     <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <div class="dropdown-content more">
+                            <span class="skills-title">Skills</span>
+                            <div class="skills-list">
+                                <label>Makeup</label>
+                                <label>Singing</label>
+                                <label>Dancer</label>
+                                <label>Cooking</label>
+                            </div>
+                        </div>
+                     </div>
 
-    <script src="script.js"></script>
-   
+                </div>
+            </div>
+            <!-- -----------------End of top box (Menu)---------------- -->
+            <div class="images-box">
+                <img src="./images/avatar-nhuy.jpg" alt="User-profile">
+            </div>
+            <!-------------------- End of Image of Box ------------------->
+            <div class="main-box">
+                <div class="user-info">
+                    <span class="name">Pham Thi Nhu Y</span> 
+                    <span class="major">- Finance And Banking -</span>
+                </div>
+            
+            <!------------------ End of user Infomation ------------------->
+            <div class="social-icons">
+                <div class="social-icons-box">
+                    <a href="https://www.facebook.com/nhuy.pt.3998?locale=vi_VN">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <p class="social-icons-name">facabook</p>
+                    </a>
+                </div>
+                <div class="social-icons-box">
+                    <a href="https://www.tiktok.com/@nhuydayrui?_t=8pHV8CdTPo9&_r=1">
+                        <span><i class="fa-brands fa-tiktok"></i></span>
+                        <p class="social-icons-name">Tiktok</p>
+                    </a>
+                </div>
+                <div class="social-icons-box">
+                    <a href="https://www.instagram.com/iam_nhuys">
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <p class="social-icons-name">Instagram</p>
+                    </a>
+                </div>
+                <div class="social-icons-box">
+                    <a href="https://www.threads.net/@iam_nhuys">
+                        <span><i class="fa-brands fa-threads"></i></span>
+                        <p class="social-icons-name">Threads</p>
+                    </a>
+                </div>
+            </div>
+            <!-- ----------------End of social icons--------------------------->
+
+             <div class="btn-box"><button class="btn">Info</button></div> 
+
+            <!-- giới thiệu bản thân  -->
+            </div>
+            <!-- animation -->
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+        </div>
+    </div>
+
+
+</body>
 </html>
